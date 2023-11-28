@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <!-- Calculater contain -->
+    <div class="calculator">
+      <input type="text" id="result" />
+      <div class="result-box">
+        <input type="button" value="C" onclick="clr()" />
+        <input type="button" value="" />
+        <input type="button" value="" />
+        <input
+          id="operator"
+          type="button"
+          value="÷"
+          onclick="display('/')"
+          onkeydown="myFunction(event)"
+        />
+      </div>
+      <div class="lane1">
+        <input
+          type="button"
+          value="7"
+          onclick="display('7')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="display('8')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="display('9')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          id="operator"
+          type="button"
+          value="x"
+          onclick="display('*')"
+          onkeydown="myFunction(event)"
+        />
+      </div>
+      <div class="lane2">
+        <input
+          type="button"
+          value="4"
+          onclick="display('4')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="display('5')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="display('6')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          id="operator"
+          type="button"
+          value="-"
+          onclick="display('-')"
+          onkeydown="myFunction(event)"
+        />
+      </div>
+      <div class="lane3">
+        <input
+          type="button"
+          value="1"
+          onclick="display('1')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="display('2')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="display('3')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          id="operator"
+          type="button"
+          value="+"
+          onclick="display('+')"
+          onkeydown="myFunction(event)"
+        />
+      </div>
+      <div class="lane4">
+        <input
+          id="o"
+          type="button"
+          value="0"
+          onclick="display('0')"
+          onkeydown="myFunction(event)"
+        />
+        <input
+          type="button"
+          value="."
+          onclick="display('.')"
+          onkeydown="myFunction(event)"
+        />
+        <input id="calc" type="button" value="=" onclick="solve()" />
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
